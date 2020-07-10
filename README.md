@@ -27,3 +27,11 @@ This current file outlines the steps to analyze the recorded videos to obtain de
 5. The file "**Raw Neuron Data Plots**" outputs the heatmaps for every SI files with the y-axis as the neuron numbers and the x-axis the distance bins or angle bins
 6. The file "**Get Frame According to Criterial**" allows us to extract the frames according to distance, angle, zone, etc.
 6. The file "**Timestamp Rematching by Binning**" matches the MS frames and the behavioural frames according to a given bin size. We then take the average values of the distances and angles from the behavioural frames within that bin, and the sum of neuron spikes and intensity from the MS frames within the bin
+
+## To use the files "**2 Animals_Binned Frame Analysis**" and "**neuronSFunctionsTwoAnimals**"
+1. Make sure to create a parameter CSV file for all the animals that you want to analyze in the same format as "SI_parameter.csv"
+2. Create a folder called "**timestamps**" and "**neuronS**" in the directory "**cage with 2 animals**" and put the relevant timestamp and neuron.S files there
+3. Open "**neuronSFunctionsTwoAnimals**", make sure to run cell 5 to ensure all the parameters have the same length
+4. Make sure to change the DLC columns' name in cell 6 when necessary
+
+***Note***: This can also be used to analyze 3 animals, we just need to change the directory to the ones corresponding to the 3 animal case and repeat the steps above
